@@ -1,6 +1,11 @@
 #include <stdio.h>
- 
-int main (void) {
-printf ("with proper grammar, but the outcome is a piece of art,");
+/**
+ * main - entry point
+ * print msg with printf function
+ * Return: success
+ */
+int main(void)
+{
+printf("with proper grammar, but the outcome is a piece of art,");
 return (0);
 }
