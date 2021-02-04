@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdbool.h>
 /**
  * main - entry point
  * print combination 3 digit
@@ -8,27 +9,26 @@
 int main(void)
 {
 	int c, i, j;
-	int d = '1';
-	int n = '2';
 
-	for (c = '0'; c <= '9'; c++)
+	for (c = '0'; c <= '7'; c++)
 	{
-		for (i = d; i <= '9'; i++)
+		for (i = '1'; i <= '8'; i++)
 		{
-			for (j = n; j <= '9'; j++)
+			for (j = '1'; j <= '9'; j++)
 			{
-				putchar(c);
-				putchar(i);
-				putchar(j);
-				if ((c != '7') || (i != '8') || (j != '9'))
+				if ((c != i) && (i != j) && (c != j))
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(c);
+					putchar(i);
+					putchar(j);
+					if ((c != '7') || (i != '8') || (j != '9'))
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
-		n++;
 		}
-	d++;
 	}
 	putchar('\n');
 	return (0);
