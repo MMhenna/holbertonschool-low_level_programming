@@ -3,7 +3,6 @@
 #include <time.h>
 /**
  * main - entry point
- * check statut of n and print msg
  * Return: success
  */
 int main(void)
