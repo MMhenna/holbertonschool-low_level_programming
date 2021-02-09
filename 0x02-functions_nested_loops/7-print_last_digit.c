@@ -1,6 +1,4 @@
 #include "holberton.h"
-#include <unistd.h>
-#include <stdio.h>
 
 /**
  *print_last_digit - give the last digit of a number
@@ -10,7 +8,15 @@
 
 int print_last_digit(int n)
 {
-int i = n % 10;
+int i;
+
+if (n < 0)
+{
+n = -n;
+}
+
+i = n % 10;
+_putchar(i + '0');
 return (i);
 }
 
