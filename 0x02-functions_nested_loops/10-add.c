@@ -2,13 +2,13 @@
 
 /**
  * add - add two numbers
- *@i: first parameter
- *@j: second parameter
+ *@a: first parameter
+ *@b: second parameter
  *Return: @i + @j
  */
 
-int add(int i, int j)
+int add(int a, int b)
 {
-int k = i + j;
-return (k);
+int r = a + b;
+return (r);
 }
