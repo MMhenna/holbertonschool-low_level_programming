@@ -8,20 +8,22 @@
 
 int main(void)
 {
-	unsigned int i = 2;
-	int l;
-	unsigned long num = 612852475143;
+	int i = 2;
+	int l = 0;
+	long int num = 612852475143;
 
-	while (i < num)
+	while (i < num/2)
 	{
 		if (num % i == 0)
 		{
-			l = i;
+			if (i > l)
+				l = i;
+
 			num = num / i;
 			i = 2;
 		}
 	i++;
 	}
-	printf("%d\n", l);
+	printf("%li\n", num);
 return (0);
 }
