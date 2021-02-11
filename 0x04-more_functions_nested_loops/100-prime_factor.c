@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	int i = 2;
+	unsigned int i = 2;
 	int l;
-	long num = 612852475143;
+	unsigned long num = 612852475143;
 
 	while (i < num)
 	{
