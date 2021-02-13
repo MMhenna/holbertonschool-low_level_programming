@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int prev1 = 1, prev2 = 2, sum = 3, s = 0;
+	int prev1 = 1, prev2 = 2, sum = 0, s = 0;
 
 	while (s <= 4000000)
 	{
