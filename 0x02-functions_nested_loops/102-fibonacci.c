@@ -17,7 +17,9 @@ int main(void)
 		s = prev1 + prev2;
 		prev1 = prev2;
 		prev2 = s;
-		printf("%li, ", s);
+		printf("%li", s);
+		if (i != 50)
+			printf(", ");
 	}
 	printf("\n");
 return (0);
