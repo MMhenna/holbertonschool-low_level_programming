@@ -8,15 +8,16 @@
 
 int main(void)
 {
-	int i, prev1 = 1, prev2 = 2, s = 0;
+	int i;
+	long int  prev1 = 1, prev2 = 2, s = 0;
 
-	printf("%d, %d, ", prev1, prev2);
+	printf("%li, %li, ", prev1, prev2);
 	for (i = 3; i <= 50; i++)
 	{
 		s = prev1 + prev2;
 		prev1 = prev2;
 		prev2 = s;
-		printf("%d, ", s);
+		printf("%li, ", s);
 	}
 	printf("\n");
 return (0);
