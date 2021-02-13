@@ -19,7 +19,7 @@ int main(void)
 		}
 	i++;
 	}
-	printf("sum of the multiples of 3 and 5 below 1024 : %d\n", s);
+	printf("%d\n", s);
 	return (0);
 }
 
