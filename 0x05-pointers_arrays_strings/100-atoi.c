@@ -9,7 +9,7 @@
 
 int _atoi(char *s)
 {
-	unsigned int nbr = 0;
+	int nbr = 0;
 	int j = 0, cp = 0, cm = 0;
 
 	while (((s[j] < '0') || (s[j] > '9')) && (s[j] != '\0'))
