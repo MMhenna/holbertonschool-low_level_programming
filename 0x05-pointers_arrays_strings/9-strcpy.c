@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
  *_strcpy - copy first string in second
@@ -14,10 +13,10 @@ char *_strcpy(char *dest, char *src)
 
 	while (*src != '\0')
 	{
-		*p = *src;
-		p++;
+		*dest = *src;
+		dest++;
 		src++;
 	}
-	*p = '\0';
+	*dest = '\0';
 	return (p);
 }
