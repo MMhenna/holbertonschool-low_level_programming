@@ -9,25 +9,20 @@
 int _atoi(char *s)
 {
 	int nbr = 0;
-	int j = 0, cp = 0, cm = 0;
+	int j = 0, sm = -1;
 
 	while (((s[j] < '0') || (s[j] > '9')) && (s[j] != '\0'))
 	{
 		if (s[j] == '-')
-			cm++;
-		if (s[j] == '+')
-			cp++;
+			sm *= -1;
 		j++;
 	}
 
 	while (((s[j] >= '0') && (s[j] <= '9')) && (s[j] != '\0'))
 	{
-		nbr = (nbr * 10) + (s[j] - '0');
+		nbr = (nbr * 10) - (s[j] - '0');
 		j++;
 	}
 
-	if (cm > cp)
-		return (-nbr);
-	else
-		return (nbr);
+	return (nbr * sm);
 }
