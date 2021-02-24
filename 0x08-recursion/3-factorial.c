@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *factoriel - fact of integer
+ *factorial - fact of integer
  *@n: integer
  * Return: success
  **/
