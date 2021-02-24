@@ -2,7 +2,7 @@
 
 /**
  *factoriel - fact of integer
- *@n: integer 
+ *@n: integer
  * Return: success
  **/
 
