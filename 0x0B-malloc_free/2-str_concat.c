@@ -10,9 +10,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0, j = 0;
+	int i = 0, j = 0, v = 0, w = 0;
 	char *ptr;
-	char *concatptr;
 
 	if (s1 != NULL)
 	{
@@ -31,22 +30,19 @@ char *str_concat(char *s1, char *s2)
 	if (ptr == NULL)
 		return (NULL);
 
-	/* Concate string(s) */
 
-	concatptr = ptr;
-	while (*s1)
+	while (v < i)
 	{
-		*concatptr = *s1;
-		concatptr++;
-		s1++;
+		ptr[v] = s1[v];
+		v++;
 	}
-	while (*s2)
+	while (v < i + j)
 	{
-		*concatptr = *s2;
-		concatptr++;
-		s2++;
+		ptr[v] = s2[w];
+		v++;
+		w++;
 	}
 
-	*concatptr = '\0';
+	ptr[v] = '\0';
 	return (ptr);
 }
