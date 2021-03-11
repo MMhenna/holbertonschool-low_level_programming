@@ -6,19 +6,18 @@
  *print_strings - print string
  *@separator: separator between numbers
  *@n: number of parameter
- *@...: parameters
  *
  * Return: successful.
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
+	unsigned int i;
+	char *ch;
+
 	va_list ap;
 
 	va_start(ap, n);
-
-	unsigned int i;
-	char *ch;
 
 	for (i = 1; i <= n; i++)
 	{
