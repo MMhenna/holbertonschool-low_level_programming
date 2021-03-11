@@ -5,19 +5,18 @@
 /**
  *print_all - print everything
  *@format: format of arguments
- *@...: parameters
  *
  * Return: successful.
  */
 
 void print_all(const char * const format, ...)
 {
+	unsigned int i = 0;
+	char c, *ch, *separator = "";
+
 	va_list ap;
 
 	va_start(ap, format);
-
-	unsigned int i = 0;
-	char c, *ch, *separator = "";
 
 	while (format[i] != '\0')
 	{
@@ -46,6 +45,8 @@ void print_all(const char * const format, ...)
 		}
 	i++;
 	}
+
 	printf("\n");
+
 	va_end(ap);
 }
