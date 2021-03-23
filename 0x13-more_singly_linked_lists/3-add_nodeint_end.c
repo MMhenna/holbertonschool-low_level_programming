@@ -35,7 +35,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 /**
  * create_node - Creates a new node.
- * @n: String to add to the node.
+ * @n: Value to add to the node.
  *
  * Return: A pointer to the allocated memory
  */
