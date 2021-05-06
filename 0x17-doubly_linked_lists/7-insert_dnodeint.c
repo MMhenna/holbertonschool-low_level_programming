@@ -16,13 +16,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	if (h == NULL)
 		return (NULL);
-
 	new = malloc(sizeof(dlistint_t));
 	if (new == NULL)
 		return (NULL);
-
 	new->n = n;
-	/* idx == 0 and no linked list */
 	if (!idx && *h == NULL)
 	{
 		new->prev = NULL;
@@ -30,7 +27,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		(*h) = new;
 		return (new);
 	}
-	/* link to insert is the head*/
 	if (!idx)
 	{
 		new->prev = NULL;
@@ -39,7 +35,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		*h = new;
 		return (new);
 	}
-	/* link to insert is NOT at head or tail */
 	count = 0;
 	copy = *h;
 	while (copy)
@@ -52,7 +47,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			new->next = copy;
 			return (new);
 		}
-
 		if (copy->next == NULL && ++count == idx)
 		{
 			copy->next = new;
